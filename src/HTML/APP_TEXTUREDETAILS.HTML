@@ -1,0 +1,120 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"
+"http://www.w3.org/TR/REC-html40/loose.dtd">
+<html>
+<head>
+<title>
+App_TextureDetails</title>
+</head>
+<!--Warning, do not edit - this file has been created automatically and will be overwritten-->
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<table cellspacing=1 cellpadding=3 width=100%>
+<tr>
+<td bgcolor="e0e0e0"><a href="allunits.html"><center>UNITS</center></a></td>
+<td bgcolor="e0e0e0"><a href="allclass.html"><center>CLASSES, INTERFACES, OBJECTS</center></a></td>
+<td bgcolor="e0e0e0"><a href="alltypes.html"><center>TYPES</center></a></td>
+<td bgcolor="e0e0e0"><a href="allvaria.html"><center>VARIABLES</center></a></td>
+<td bgcolor="e0e0e0"><a href="allconst.html"><center>CONSTANTS</center></a></td>
+<td bgcolor="e0e0e0"><a href="allfuncs.html"><center>FUNCTIONS, PROCEDURES</center></a></td>
+<td bgcolor="e0e0e0"><a href="allident.html"><center>IDENTIFIERS</center></a></td>
+</tr>
+</table>
+<font face="Helvetica, Arial"><h1>Unit App_TextureDetails</h1></font>
+<font face="Helvetica, Arial"><h2>Description</h2></font>
+<p>
+                 This unit contains a form which displays some extended details on
+ the    currently selected texture. (used renderer is outdated, will be replaced 
+   with the new extended renderer)</p>
+<font face="Helvetica, Arial"><h2>Constants</h2></font>
+<table border=0 width=100%><tr bgcolor="#e0e0e0"><th>Name</th><th>Description</th></tr>
+<tr><a name="link195"><td bgcolor="#efefef">ZoomFactor</td>
+<td bgcolor="#efefef"> zoom factor, used to translate in and out </td>
+</a></tr>
+</table><font face="Helvetica, Arial"><h2>Variables</h2></font>
+<table border=0 width=100%><tr bgcolor="#e0e0e0"><th>Name</th><th>Description</th></tr>
+<tr><a name="link196"><td bgcolor="#efefef">Animate</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link197"><td bgcolor="#efefef">CurFrame</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link198"><td bgcolor="#efefef">FrameCount</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link199"><td bgcolor="#efefef">h_DC</td>
+<td bgcolor="#efefef"> device context of the control in which should be rendered to </td>
+</a></tr>
+<tr><a name="link200"><td bgcolor="#efefef">h_RC</td>
+<td bgcolor="#efefef"> OpenGL rendering context of the control in which should be rendered to </td>
+</a></tr>
+<tr><a name="link201"><td bgcolor="#efefef">h_WND</td>
+<td bgcolor="#efefef"> window handle of the control in which should be rendered to </td>
+</a></tr>
+<tr><a name="link202"><td bgcolor="#efefef">MaxFrameRate</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link203"><td bgcolor="#efefef">MinFrameRate</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link204"><td bgcolor="#efefef">OrigZoom</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link205"><td bgcolor="#efefef">TexHeight</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link206"><td bgcolor="#efefef">TexName</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link207"><td bgcolor="#efefef">Texture</td>
+<td bgcolor="#efefef"> array for the texture indices </td>
+</a></tr>
+<tr><a name="link208"><td bgcolor="#efefef">TexWidth</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link209"><td bgcolor="#efefef">Tex_Size</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link210"><td bgcolor="#efefef">z</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+</table><font face="Helvetica, Arial"><h2>Types</h2></font>
+<p>None.</p><font face="Helvetica, Arial"><h2>Functions and procedures</h2></font>
+<font face="Helvetica, Arial"><h3>Overview</h3></font>
+<table cellspacing=1 cellpadding=3 width=100%>
+<tr><td bgcolor="#efefef"><a href="App_TextureDetails.html#link211"><code>procedure glBindTexture(target: GLenum; texture: GLuint); stdcall; external opengl32;</code></a></td>
+</tr>
+<tr><td bgcolor="#efefef"><a href="App_TextureDetails.html#link212"><code>procedure glGenTextures(n: GLsizei; var textures: GLuint); stdcall; external opengl32;</code></a></td>
+</tr>
+</table>
+<font face="Helvetica, Arial"><h3>Description</h3></font>
+
+<p><table cellspacing=1 cellpadding=3 width=100%>
+<tr><a name="link211"><td bgcolor="#efefef"><code>procedure glBindTexture(target: GLenum; texture: GLuint); stdcall; external opengl32;</code></td>
+</a></tr>
+</table>
+</p>
+<p> Binds a texture. Imported from OpenGL32.dll </p>
+
+<p><table cellspacing=1 cellpadding=3 width=100%>
+<tr><a name="link212"><td bgcolor="#efefef"><code>procedure glGenTextures(n: GLsizei; var textures: GLuint); stdcall; external opengl32;</code></td>
+</a></tr>
+</table>
+</p>
+<p> Generates texture ids. Imported from OpenGL32.dll </p>
+<font face="Helvetica, Arial"><h2>Classes, interfaces and objects</h2></font>
+<table cellspacing=1 cellpadding=3 width=100%>
+<tr bgcolor="#e0e0e0"><th>Name</th><th>Description</th></tr>
+<tr><td bgcolor="#efefef">Class <a href="TDlg_TextureDetails.html">TDlg_TextureDetails</a></td>
+<td bgcolor="#efefef"> form which displays extended infos on a texture and display the texture      itself
+ (fully animated, if possible) using OpenGL </td>
+</tr>
+</table>
+<font face="Helvetica, Arial"><h2>Author</h2></font>
+<p>Jesco Topp &lt;<a href="mailto:jesco@users.sourceforge.net"><code>jesco@users.sourceforge.net</code></a>&gt; &amp; Andy Ford &lt;fordy@planetunreal.com&gt;</p>
+<font face="Helvetica, Arial"><h2>Created</h2></font>
+<p>January 2001</p>
+<font face="Helvetica, Arial"><h2>Last modification</h2></font>
+<p>October 2001
+</p>
+<hr><em>Generated by <a href="http://pasdoc.sourceforge.net">pasdoc 0.6.20</a> on Wed 20 Mar 2002 20:59:34</em>
+</body>
+</html>

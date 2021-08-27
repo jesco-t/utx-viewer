@@ -1,0 +1,184 @@
+<table cellspacing=1 cellpadding=3 width=100%>
+<tr>
+<td bgcolor="e0e0e0"><a href="allunits.html"><center>UNITS</center></a></td>
+<td bgcolor="e0e0e0"><a href="allclass.html"><center>CLASSES, INTERFACES, OBJECTS</center></a></td>
+<td bgcolor="e0e0e0"><a href="alltypes.html"><center>TYPES</center></a></td>
+<td bgcolor="e0e0e0"><a href="allvaria.html"><center>VARIABLES</center></a></td>
+<td bgcolor="e0e0e0"><a href="allconst.html"><center>CONSTANTS</center></a></td>
+<td bgcolor="e0e0e0"><a href="allfuncs.html"><center>FUNCTIONS, PROCEDURES</center></a></td>
+<td bgcolor="e0e0e0"><a href="allident.html"><center>IDENTIFIERS</center></a></td>
+</tr>
+</table>
+<a name="link522"><font face="Helvetica, Arial"><h1>Class TUTPackage_Load</h1></font>
+</a><font face="Helvetica, Arial"><h2>Unit</h2></font>
+<a href="UTPFF_Load.html">UTPFF_Load</a><br><font face="Helvetica, Arial"><h2>Declaration</h2></font>
+<code>type TUTPackage_Load = class(TObject)</code><br><font face="Helvetica, Arial"><h2>Description</h2></font>
+------------------------------------------------------------------------------<font face="Helvetica, Arial"><h2>Fields</h2></font>
+<table border=0 width=100%><tr bgcolor="#e0e0e0"><th>Name</th><th>Description</th></tr>
+<tr><a name="link523"><td bgcolor="#efefef">ExportCount</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link524"><td bgcolor="#efefef">ExportOffset</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link525"><td bgcolor="#efefef">ExportTable</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link526"><td bgcolor="#efefef">Hstr</td>
+<td bgcolor="#efefef"> list of all textures</td>
+</a></tr>
+<tr><a name="link527"><td bgcolor="#efefef">ImportCount</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link528"><td bgcolor="#efefef">ImportOffset</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link529"><td bgcolor="#efefef">ImportTable</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link530"><td bgcolor="#efefef">IsPkgOpen</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link531"><td bgcolor="#efefef">Name</td>
+<td bgcolor="#efefef"> general</td>
+</a></tr>
+<tr><a name="link532"><td bgcolor="#efefef">NameCount</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link533"><td bgcolor="#efefef">NameOffset</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link534"><td bgcolor="#efefef">NameTable</td>
+<td bgcolor="#efefef"> Tables</td>
+</a></tr>
+<tr><a name="link535"><td bgcolor="#efefef">PkgFlags</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link536"><td bgcolor="#efefef">PkgVer</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link537"><td bgcolor="#efefef">Signature</td>
+<td bgcolor="#efefef"> global header (partially)</td>
+</a></tr>
+<tr><a name="link538"><td bgcolor="#efefef">Size</td>
+<td bgcolor="#efefef"> filename of the package</td>
+</a></tr>
+<tr><a name="link539"><td bgcolor="#efefef">Str_Handle</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link540"><td bgcolor="#efefef">Texture</td>
+<td bgcolor="#efefef"> texture-objects</td>
+</a></tr>
+<tr><a name="link541"><td bgcolor="#efefef">TextureList</td>
+<td bgcolor="#efefef"> filesize ---   &quot;&quot;   ---</td>
+</a></tr>
+</table><font face="Helvetica, Arial"><h2>Methods</h2></font>
+<font face="Helvetica, Arial"><h3>Overview</h3></font>
+<table cellspacing=1 cellpadding=3 width=100%>
+<tr><td bgcolor="#efefef"><a href="TUTPackage_Load.html#link542"><code>constructor Create;</code></a></td>
+</tr>
+<tr><td bgcolor="#efefef"><a href="TUTPackage_Load.html#link543"><code>destructor Destroy; override;</code></a></td>
+</tr>
+<tr><td bgcolor="#efefef"><a href="TUTPackage_Load.html#link544"><code>procedure Build_ObjectReferences;</code></a></td>
+</tr>
+<tr><td bgcolor="#efefef"><a href="TUTPackage_Load.html#link545"><code>procedure Build_TextureList;</code></a></td>
+</tr>
+<tr><td bgcolor="#efefef"><a href="TUTPackage_Load.html#link546"><code>function Evaluate_ObjectReference( Value : longint): string;</code></a></td>
+</tr>
+<tr><td bgcolor="#efefef"><a href="TUTPackage_Load.html#link547"><code>procedure Free;</code></a></td>
+</tr>
+<tr><td bgcolor="#efefef"><a href="TUTPackage_Load.html#link548"><code>procedure Get_PackageInformation( var Tex, Mus, Snd, Geo, Mdl, Scri : Boolean );</code></a></td>
+</tr>
+<tr><td bgcolor="#efefef"><a href="TUTPackage_Load.html#link549"><code>procedure Load( FileName : string );</code></a></td>
+</tr>
+<tr><td bgcolor="#efefef"><a href="TUTPackage_Load.html#link550"><code>procedure Load_NormalTexture( ListIndex : integer; MaxPreviewSize : integer );</code></a></td>
+</tr>
+<tr><td bgcolor="#efefef"><a href="TUTPackage_Load.html#link551"><code>procedure Read_Header;</code></a></td>
+</tr>
+<tr><td bgcolor="#efefef"><a href="TUTPackage_Load.html#link552"><code>procedure Read_Tables;</code></a></td>
+</tr>
+</table>
+<font face="Helvetica, Arial"><h3>Description</h3></font>
+
+<p><table cellspacing=1 cellpadding=3 width=100%>
+<tr><a name="link542"><td bgcolor="#efefef"><code>constructor Create;</code></td>
+</a></tr>
+</table>
+</p>
+<p> init &amp; finish stuff</p>
+
+<p><table cellspacing=1 cellpadding=3 width=100%>
+<tr><a name="link543"><td bgcolor="#efefef"><code>destructor Destroy; override;</code></td>
+</a></tr>
+</table>
+</p>
+<p>&nbsp;</p>
+
+<p><table cellspacing=1 cellpadding=3 width=100%>
+<tr><a name="link544"><td bgcolor="#efefef"><code>procedure Build_ObjectReferences;</code></td>
+</a></tr>
+</table>
+</p>
+<p> reads name-, import- and export-table</p>
+
+<p><table cellspacing=1 cellpadding=3 width=100%>
+<tr><a name="link545"><td bgcolor="#efefef"><code>procedure Build_TextureList;</code></td>
+</a></tr>
+</table>
+</p>
+<p>&nbsp;</p>
+
+<p><table cellspacing=1 cellpadding=3 width=100%>
+<tr><a name="link546"><td bgcolor="#efefef"><code>function Evaluate_ObjectReference( Value : longint): string;</code></td>
+</a></tr>
+</table>
+</p>
+<p> creates all neccessary object-references (requieres complete tables)</p>
+
+<p><table cellspacing=1 cellpadding=3 width=100%>
+<tr><a name="link547"><td bgcolor="#efefef"><code>procedure Free;</code></td>
+</a></tr>
+</table>
+</p>
+<p>&nbsp;</p>
+
+<p><table cellspacing=1 cellpadding=3 width=100%>
+<tr><a name="link548"><td bgcolor="#efefef"><code>procedure Get_PackageInformation( var Tex, Mus, Snd, Geo, Mdl, Scri : Boolean );</code></td>
+</a></tr>
+</table>
+</p>
+<p>&nbsp;</p>
+
+<p><table cellspacing=1 cellpadding=3 width=100%>
+<tr><a name="link549"><td bgcolor="#efefef"><code>procedure Load( FileName : string );</code></td>
+</a></tr>
+</table>
+</p>
+<p> object for loading normaltextures</p>
+
+<p><table cellspacing=1 cellpadding=3 width=100%>
+<tr><a name="link550"><td bgcolor="#efefef"><code>procedure Load_NormalTexture( ListIndex : integer; MaxPreviewSize : integer );</code></td>
+</a></tr>
+</table>
+</p>
+<p> load the file specified in FileName</p>
+
+<p><table cellspacing=1 cellpadding=3 width=100%>
+<tr><a name="link551"><td bgcolor="#efefef"><code>procedure Read_Header;</code></td>
+</a></tr>
+</table>
+</p>
+<p>&nbsp;</p>
+
+<p><table cellspacing=1 cellpadding=3 width=100%>
+<tr><a name="link552"><td bgcolor="#efefef"><code>procedure Read_Tables;</code></td>
+</a></tr>
+</table>
+</p>
+<p> reads the global headers</p>
+<font face="Helvetica, Arial"><h2>Properties</h2></font>
+<p>
+None.</p>
+<hr><em>Generated by <a href="http://pasdoc.sourceforge.net">pasdoc 0.6.20</a> on Wed 20 Mar 2002 20:59:34</em>
+</body>
+</html>

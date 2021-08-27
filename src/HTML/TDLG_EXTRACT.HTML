@@ -1,0 +1,186 @@
+<table cellspacing=1 cellpadding=3 width=100%>
+<tr>
+<td bgcolor="e0e0e0"><a href="allunits.html"><center>UNITS</center></a></td>
+<td bgcolor="e0e0e0"><a href="allclass.html"><center>CLASSES, INTERFACES, OBJECTS</center></a></td>
+<td bgcolor="e0e0e0"><a href="alltypes.html"><center>TYPES</center></a></td>
+<td bgcolor="e0e0e0"><a href="allvaria.html"><center>VARIABLES</center></a></td>
+<td bgcolor="e0e0e0"><a href="allconst.html"><center>CONSTANTS</center></a></td>
+<td bgcolor="e0e0e0"><a href="allfuncs.html"><center>FUNCTIONS, PROCEDURES</center></a></td>
+<td bgcolor="e0e0e0"><a href="allident.html"><center>IDENTIFIERS</center></a></td>
+</tr>
+</table>
+<a name="link34"><font face="Helvetica, Arial"><h1>Class TDlg_Extract</h1></font>
+</a><font face="Helvetica, Arial"><h2>Unit</h2></font>
+<a href="App_Extract.html">App_Extract</a><br><font face="Helvetica, Arial"><h2>Declaration</h2></font>
+<code>type TDlg_Extract = class(TForm)</code><br><font face="Helvetica, Arial"><h2>Description</h2></font>
+ Dialog for mass extraction of textures. This is dialog reads the Extraction     
+ Mode variable and determines if it shall extract only a single package or a     
+ complete folder.<font face="Helvetica, Arial"><h2>Fields</h2></font>
+<table border=0 width=100%><tr bgcolor="#e0e0e0"><th>Name</th><th>Description</th></tr>
+<tr><a name="link35"><td bgcolor="#efefef">Btn_Start</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link36"><td bgcolor="#efefef">CancelBtn</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link37"><td bgcolor="#efefef">ComPrg</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link38"><td bgcolor="#efefef">CurPkg</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link39"><td bgcolor="#efefef">CurPrg</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link40"><td bgcolor="#efefef">CurTex</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link41"><td bgcolor="#efefef">ExtractMode</td>
+<td bgcolor="#efefef"> Extraction Mode: 1 - single package;                         2 - all packages in
+ current directory </td>
+</a></tr>
+<tr><a name="link42"><td bgcolor="#efefef">ExtractThread</td>
+<td bgcolor="#efefef"> thread object which extracts the actual textures: <a href="TExtractThread.html">TExtractThread</a> </td>
+</a></tr>
+<tr><a name="link43"><td bgcolor="#efefef">Extract_MipMaps</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link44"><td bgcolor="#efefef">FileCount</td>
+<td bgcolor="#efefef"> count of packages in list (only if all packages will be extracted) </td>
+</a></tr>
+<tr><a name="link45"><td bgcolor="#efefef">FileList</td>
+<td bgcolor="#efefef"> array which contains a list of all packages including pathes (only if all       
+ packages in current directory will be extracted) </td>
+</a></tr>
+<tr><a name="link46"><td bgcolor="#efefef">FileName</td>
+<td bgcolor="#efefef"> path &amp; name of texture package </td>
+</a></tr>
+<tr><a name="link47"><td bgcolor="#efefef">GroupBox1</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link48"><td bgcolor="#efefef">GroupBox2</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link49"><td bgcolor="#efefef">GroupBox3</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link50"><td bgcolor="#efefef">Image1</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link51"><td bgcolor="#efefef">InProgress</td>
+<td bgcolor="#efefef"> boolean variable which shows if a extraction process is currently in        progress</td>
+</a></tr>
+<tr><a name="link52"><td bgcolor="#efefef">Label1</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link53"><td bgcolor="#efefef">Label10</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link54"><td bgcolor="#efefef">Label23</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link55"><td bgcolor="#efefef">Label3</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link56"><td bgcolor="#efefef">Label4</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link57"><td bgcolor="#efefef">Label5</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link58"><td bgcolor="#efefef">Label6</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link59"><td bgcolor="#efefef">Label9</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link60"><td bgcolor="#efefef">lblTime</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link61"><td bgcolor="#efefef">lblTimeLeft</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link62"><td bgcolor="#efefef">Panel1</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link63"><td bgcolor="#efefef">PkgCount</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link64"><td bgcolor="#efefef">Preserve_Groups</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link65"><td bgcolor="#efefef">TexCount</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+<tr><a name="link66"><td bgcolor="#efefef">TextureId</td>
+<td bgcolor="#efefef"> index of texture into ExportTable (only if single texture will be        exported)
+ </td>
+</a></tr>
+<tr><a name="link67"><td bgcolor="#efefef">txtExtractTo</td>
+<td bgcolor="#efefef">&nbsp;</td>
+</a></tr>
+</table><font face="Helvetica, Arial"><h2>Methods</h2></font>
+<font face="Helvetica, Arial"><h3>Overview</h3></font>
+<table cellspacing=1 cellpadding=3 width=100%>
+<tr><td bgcolor="#efefef"><a href="TDlg_Extract.html#link68"><code>procedure Btn_StartClick(Sender: TObject);</code></a></td>
+</tr>
+<tr><td bgcolor="#efefef"><a href="TDlg_Extract.html#link69"><code>procedure CancelBtnClick(Sender: TObject);</code></a></td>
+</tr>
+<tr><td bgcolor="#efefef"><a href="TDlg_Extract.html#link70"><code>procedure Complete;</code></a></td>
+</tr>
+<tr><td bgcolor="#efefef"><a href="TDlg_Extract.html#link71"><code>procedure FormShow(Sender: TObject);</code></a></td>
+</tr>
+<tr><td bgcolor="#efefef"><a href="TDlg_Extract.html#link72"><code>function ShowModal : Integer; override;</code></a></td>
+</tr>
+<tr><td bgcolor="#efefef"><a href="TDlg_Extract.html#link73"><code>procedure Single;</code></a></td>
+</tr>
+</table>
+<font face="Helvetica, Arial"><h3>Description</h3></font>
+
+<p><table cellspacing=1 cellpadding=3 width=100%>
+<tr><a name="link68"><td bgcolor="#efefef"><code>procedure Btn_StartClick(Sender: TObject);</code></td>
+</a></tr>
+</table>
+</p>
+<p> Starts the extraction process. </p>
+
+<p><table cellspacing=1 cellpadding=3 width=100%>
+<tr><a name="link69"><td bgcolor="#efefef"><code>procedure CancelBtnClick(Sender: TObject);</code></td>
+</a></tr>
+</table>
+</p>
+<p> Cancels extraction process </p>
+
+<p><table cellspacing=1 cellpadding=3 width=100%>
+<tr><a name="link70"><td bgcolor="#efefef"><code>procedure Complete;</code></td>
+</a></tr>
+</table>
+</p>
+<p> Controls the extraction-thread for a multiple packages </p>
+
+<p><table cellspacing=1 cellpadding=3 width=100%>
+<tr><a name="link71"><td bgcolor="#efefef"><code>procedure FormShow(Sender: TObject);</code></td>
+</a></tr>
+</table>
+</p>
+<p> Currently disabled </p>
+
+<p><table cellspacing=1 cellpadding=3 width=100%>
+<tr><a name="link72"><td bgcolor="#efefef"><code>function ShowModal : Integer; override;</code></td>
+</a></tr>
+</table>
+</p>
+<p> Does some precalculations (like determining the amount of textures/packages) </p>
+
+<p><table cellspacing=1 cellpadding=3 width=100%>
+<tr><a name="link73"><td bgcolor="#efefef"><code>procedure Single;</code></td>
+</a></tr>
+</table>
+</p>
+<p> Controls the extraction-thread for a single package </p>
+<font face="Helvetica, Arial"><h2>Properties</h2></font>
+<p>
+None.</p>
+<hr><em>Generated by <a href="http://pasdoc.sourceforge.net">pasdoc 0.6.20</a> on Wed 20 Mar 2002 20:59:34</em>
+</body>
+</html>
